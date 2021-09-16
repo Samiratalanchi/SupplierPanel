@@ -4,7 +4,6 @@
 }
 body {
     background-color: var(--var-graycolor);
-    /* background-image: linear-gradient(to right bottom,#555b63,#89b0ae,#555b63,#89b0ae); */
     display: flex;
     align-items: center;
     justify-content: center;

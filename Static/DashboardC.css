@@ -4,12 +4,15 @@
 #panel {
     margin-right: 0%;
     margin-top: 0%;
-    width: 30%;
+    width: 20%;
     height: 100%;
     float: right;
     position: relative;
 }
 #logoBox {
+    border: solid 2px white;
+    background-color: #89b0ae;
+    border-radius: 15px 0px 0px 15px;
     margin-top: 0%;
     width: 100%;
     height: 30vh;
@@ -17,11 +20,39 @@
 
 }
 #menuBox {
+    border: solid 2px white;
+    background-color: #89b0ae;
+    border-radius: 15px 0px 0px 15px;
     margin-top: 30vh;
     width: 100%;
     height: 70vh;
     position: absolute;
-    display: flex;
-    align-items:center;
-    justify-content: center;
+    display: block;
+}
+#menu {
+    background-color: #89b0ae;
+    margin-top: 0%;
+    margin-right: 0%;
+    list-style-type: none;
+    font-size: 20px;
+    float: right;
+}
+.menuLink {
+    background-color: #89b0ae;
+    text-decoration: none;
+    color: white;
+}
+.menuItems {
+    background-color: #89b0ae;
+    margin-right:20px;
+    padding: 20px 0px;
+}
+.far , .buttonNames {
+    background-color: #89b0ae;
+}
+#factorAddingBox {
+    float: right;
+}
+.menuLink:hover {
+    color: #555b63;
 }

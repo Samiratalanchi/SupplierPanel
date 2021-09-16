@@ -56,9 +56,6 @@ body {
     margin-right:20px;
     padding: 20px 0px;
 }
-#factorAddingBox {
-    float: right;
-}
 .menuLink:hover {
     color: #555b63;
 }
@@ -112,4 +109,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+#content {
+    position:absolute;
+    width: 80vw;
+    height: auto;
+    margin-left: 2.5vw;
+    margin-top: 5vw;
+}
 #userInfo:hover #userInfoBox {display: block;}
+

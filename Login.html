@@ -2,17 +2,17 @@
     <title>Firo Products/Login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="fa" />         
-    <link rel="stylesheet" href="./Static/LoginC.css">
+    <link rel="stylesheet" href="./Static/main_css.css">
 </head>
-<body>
+<body id="loginBody">
     <img id="characterBack" src="./Static/Images/character.png">
     <img id="plantback" src="./Static/Images/plant.png">
     <div id="loginBox">
         <h1 id="header"> Log in</h1>
         <form id="loginForm">
-            <Label class="frmLogin" for="inputEmail">Email:</Label>
+            <Label class="frmLogin" id="labelLogin" for="inputEmail">Email:</Label>
             <input class="frmLogin" id="inputEmail" name="inputEmail" type="email">
-            <label class="frmLogin" for="inputPassword">Password:</label>
+            <label class="frmLogin" id="labelLogin" for="inputPassword">Password:</label>
             <input class="frmLogin" id="inputPassword" name="inputPassword" type="password">
             <Button id="submitButton" type="submit">Log in</Button>
         </form>

@@ -1,4 +1,69 @@
-body {
+/* Login_CSS */
+#loginBody {
+    background-color: #555b63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#characterBack {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 60px;
+}
+#plantBack {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    margin-left: -220px;
+    margin-top: 200px;
+}
+#loginBox {
+    position: relative;
+    z-index: 4;
+    width: 350px;
+    height: 600px;
+    background-image: linear-gradient(to left bottom,rgba(255,255,255,0.4),rgba(248, 248, 248, 0));
+    background-blend-mode:lighten;
+    border: 2px solid rgba(255,255,255,0.35);
+    border-radius: 30px;
+    display: block;
+}
+#header {
+    color: white;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+.frmLogin {
+    display: block;
+    width: 250px;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+label.frmLogin {
+    color: white;
+    margin-top: 20px;
+}
+input.frmLogin {
+    font-size: 15px;
+}
+#loginForm {
+    margin-top: 70px;
+}
+#submitButton {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 15px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 60px;
+}
+/* Dashboard_CSS */
+#dashboardBody {
     background-color: #555b63;
     margin: 0%;
     padding: 0%;

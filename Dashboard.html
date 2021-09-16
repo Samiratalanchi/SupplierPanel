@@ -6,15 +6,19 @@
     <script src="https://kit.fontawesome.com/2c6a313227.js" crossorigin="anonymous"></script>
 </head>
 <body id="dashboardBody">
-    <section id="topBox">
-        <div id="userInfo">
+
+    <div id="topBox">
+
+        <div id="userInfo" onclick="menuDisplay()">
             <i class="far fa-user-circle"></i>
-            <section id="userInfoBox">
+            <div id="userInfoBox">
                 <p id="userName">سمیرا طالانچی</p>
                 <a><button id="userExit">خروج</button></a>
-            </section>
+            </div>
         </div>
-    </section>
+
+    </div>
+
     <section id="panel">
         <div id="logoBox">
             <img id="logo" src="./Static/Images/Logo.png">
@@ -37,4 +41,17 @@
         </div>
     </section>
     <div id="content"></div>
+    <script>
+        function menuDisplay() {
+            document.getElementById("userInfoBox").style.display= "block";
+        }
+
+        window.onclick= function(event){
+            var circle = document.getElementsByClassName("far fa-user-circle")[0];
+
+            if (event.target!=circle){
+                document.getElementById("userInfoBox").style.display= "none";
+            }
+        }
+    </script>
 </body>

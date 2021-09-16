@@ -175,5 +175,5 @@ input.frmLogin {
     margin-left: 2.5vw;
     margin-top: 5vw;
 }
-#userInfo:hover #userInfoBox {display: block;}
+/* #userInfo:hover #userInfoBox {display: block;} */
 

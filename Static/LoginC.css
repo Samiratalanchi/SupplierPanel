@@ -3,15 +3,25 @@
     --var-greencolor:#89b0ae;
 }
 body {
-    background-image: linear-gradient(#555b63,#89b0ae);
+    background-color: var(--var-graycolor);
+    /* background-image: linear-gradient(to right bottom,#555b63,#89b0ae,#555b63,#89b0ae); */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#header {
-    color: white;
-    margin-left: 130px;
-    margin-top: 100px;
+#characterBack {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 60px;
+}
+#plantBack {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    margin-left: -220px;
+    margin-top: 200px;
 }
 #loginBox {
     position: relative;
@@ -23,6 +33,11 @@ body {
     border: 2px solid rgba(255,255,255,0.35);
     border-radius: 30px;
     display: block;
+}
+#header {
+    color: white;
+    margin-left: 130px;
+    margin-top: 100px;
 }
 .frmLogin {
     display: block;

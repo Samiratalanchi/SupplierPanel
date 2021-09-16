@@ -1,4 +1,4 @@
-* {
+body {
     background-color: #555b63;
 }
 #panel {
@@ -20,11 +20,12 @@
     position: absolute;
 }
 #logo {
-    background-color: #89b0ae;
-    width: 100%;
+    margin-top: 35%;
+    margin-left: 25%;
+    border: none;
+    width: 50%;
     height: auto;
     position:absolute;
-    border-radius: 50px;
 }
 #menuBox {
     border: solid 2px white;
@@ -37,7 +38,6 @@
     display: block;
 }
 #menu {
-    background-color: #89b0ae;
     margin-top: 0%;
     margin-right: 0%;
     list-style-type: none;
@@ -45,17 +45,12 @@
     float: right;
 }
 .menuLink {
-    background-color: #89b0ae;
     text-decoration: none;
     color: white;
 }
 .menuItems {
-    background-color: #89b0ae;
     margin-right:20px;
     padding: 20px 0px;
-}
-.far , .buttonNames {
-    background-color: #89b0ae;
 }
 #factorAddingBox {
     float: right;

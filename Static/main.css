@@ -1,8 +1,9 @@
 
 :root{
     --var-gray: #555b63;
+    --var-lowgray: #999ea5;
     --var-green: #6b8d8b;
-    --var-lowgreen: #afe6e2;
+    --var-lowgreen: #9ef1ec;
     --var-white: #ffffff;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
@@ -188,31 +189,66 @@ input.frmLogin {
 }
 /* CustomerAdding _CSS */
 #customerBody {
-    background-color: var(--var-gray);
+    background-color: var(--var-white);
     font-family: 'Lateef', cursive;
+    color: var(--var-gray);
 }
 #customerAddingGrid {
     display: grid;
-    grid-template-columns: 1000px 120px;
-    grid-template-rows: repeat(13,40px);
+    grid-template-columns: 300px 120px 300px 120px;
+    grid-template-rows: repeat(9,60px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 10px;
     justify-items: right;
     align-items: center;
-    color: var(--var-white);
-}
-#customerAddGrItem {
-    padding: 10px;
 }
 .customerAddingForm {
     height: 30px;
     width: 200px;
     border-radius: 10px;
 }
+.customerAddGrItem input {
+    background-color: var(--var-lowgray);
+    font-size: 16px;
+}
 .customerAddingForm:focus {
-    background-color: var(--var-lowgreen);
+    background-color: var(--var-white)
 }
 #addressInput {
-    width: 800px;
+
+    width: 700px;
+    height: 60px;
+    font-size: 16px;
+}
+.mergeNameInput{
+    grid-column: 1/4;
+}
+.mergenameLabel {
+    grid-column: 4/5;
+}
+.mergeTelInput {
+    grid-column: 1/4;
+}
+.mergeTelLabel {
+    grid-column: 4/5;
+}
+.mergeMobileInput {
+    grid-column: 1/4;
+}
+.mergeMobileLabel {
+    grid-column: 4/5;
+}
+.mergeAddressInput {
+    grid-column: 1/4;
+    height: 80px;
+}
+.mergeAddressLabel {
+    grid-column: 4/5;
+}
+.mergeLocationInput {
+    grid-column: 1/4;
+}
+.mmergeLocationLabel {
+    grid-column: 4/5;
 }

@@ -3,6 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="fa" />         
     <link rel="stylesheet" href="./Static/main.css">
+    <script src="https://kit.fontawesome.com/2c6a313227.js" crossorigin="anonymous"></script>
 </head>
 <body id="customerBody">
     <div id="customerAddingBox">
@@ -41,9 +42,7 @@
                 <div class="customerAddGrItem mergeTelInput">
                     <input class="customerAddingForm" id="telInput3" name="telInput3" type="number"> 
                     <input class="customerAddingForm" id="telInput2" name="telInput2" type="number">
-                    <button type="button" id="addTel2" onclick="displaytel">
-                        <i class="fas fa-plus-circle"></i>
-                    </button>
+                    <i class="fas fa-plus-circle" id="addTel"></i>
                     <input class="customerAddingForm" id="telInput1" name="telInput1" type="number">
                 </div>
                 <div class="customerAddGrItem mergeTelLabel">
@@ -52,9 +51,7 @@
                 <div class="customerAddGrItem mergeMobileInput">
                     <input class="customerAddingForm" id="mobileInput3" name="mobileInput3" type="number"> 
                     <input class="customerAddingForm" id="mobileInput2" name="mobileInput2" type="number">
-                    <button type="button" id="addMobile2" onclick="displayMobile">
-                        <i class="fas fa-plus-circle"></i>
-                    </button>
+                    <i class="fas fa-plus-circle" id="addMobile"></i>
                     <input class="customerAddingForm" id="mobileInput1" name="mobileInput1" type="number">
                 </div>
                 <div class="customerAddGrItem mergeMobileLAbel">
@@ -100,22 +97,34 @@
         </form>
     </div>
     <script>
+        var telCounter=0;
+        var mobileCounter=0;
+
         window.onload = function(event) {
             document.getElementById("telInput2").style.visibility="hidden";
             document.getElementById("telInput3").style.visibility="hidden";
             document.getElementById("mobileInput2").style.visibility="hidden";
             document.getElementById("mobileInput3").style.visibility="hidden";
-            document.getElementById("addTel3").style.visibility="hidden";
-            document.getElementById("addMobile3").style.visibility="hidden";
         }
         window.onclick = function(event){
-            if (event.target==document.getElementById("addTel2")) {
-                document.getElementById("telInput2").style.visibility="visible";
-                document.getElementById("addTel3").style.visibility="visible";
+            if (event.target==document.getElementById("addTel")) {
+                if(telCounter==0){
+                    document.getElementById("telInput2").style.visibility="visible";
+                    telCounter++;
+
+                }else if(telCounter==1 && document.getElementById("telInput2").text != "" ) {
+                    console.log(document.getElementById("telInput2").value);
+                    document.getElementById("telInput3").style.visibility="visible";
+                }
+                
             }
-            if (event.target==document.getElementById("addMobile2")) {
-                document.getElementById("mobileInput2").style.visibility="visible";
-                document.getElementById("addMobile3").style.visibility="visible";
+            if (event.target==document.getElementById("addMobile")) {
+                if(mobileCounter==0){
+                    document.getElementById("mobileInput2").style.visibility="visible";
+                    mobileCounter++;
+                } else if(telCounter==1 && document.getElementById("mobileInput2")!="" ) {
+                    document.getElementById("mobileInput3").style.visibility="visible";
+                }
             }
         }
     </script>

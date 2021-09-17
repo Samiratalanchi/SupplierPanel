@@ -192,6 +192,7 @@ input.frmLogin {
     color: var(--var-gray);
 }
 #customerAddingGrid {
+    float: right;
     display: grid;
     grid-template-columns: 300px 120px 300px 120px;
     grid-template-rows: repeat(9,60px);
@@ -221,6 +222,10 @@ input.frmLogin {
 }
 #addressInput:focus {
     background-color: var(--var-white);
+}
+#addTel {
+    font-size: 20px;
+    color: var(--var-green);
 }
 #addMobile {
     font-size: 20px;

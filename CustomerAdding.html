@@ -26,7 +26,102 @@
                 <div class="customerAddGrItem">
                     <label class="customerAddingForm" id="storeTypeLabel" for="storeTypeInput"> نوع فروشگاه</label> 
                 </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="emailInput" name="emailInput" type="email">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="emailLabel" for="emailInput"> ایمیل</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="websiteInput" name="websiteInput" type="text">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="websiteLabel" for="websiteInput"> وب سایت</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="telInput3" name="telInput3" type="number"> 
+                    <button type="button" id="addTel3" onclick="displaytel3">plus</button>
+                    <input class="customerAddingForm" id="telInput2" name="telInput2" type="number">
+                    <button type="button" id="addTel2" onclick="displaytel2">plus</button>
+                    <input class="customerAddingForm" id="telInput1" name="telInput1" type="number">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="telLabel" for="telInput1"> تلفن ثابت</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="mobileInput3" name="mobileInput3" type="number"> 
+                    <button type="button" id="addMobile3" onclick="displayMobile3">plus</button>
+                    <input class="customerAddingForm" id="mobileInput2" name="mobileInput2" type="number">
+                    <button type="button" id="addMobile2" onclick="displayMobile2">plus</button>
+                    <input class="customerAddingForm" id="mobileInput1" name="mobileInput1" type="number">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="mobileLabel" for="mobileInput1"> تلفن همراه</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="countryInput" name="countryInput" type="text">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="countryLabel" for="countryInput"> کشور</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="provinceInput" name="provinceInput" type="text">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="provinceLabel" for="provinceInput"> استان</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="cityInput" name="cityInput" type="text">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="cityLabel" for="cityInput"> شهر</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="postalCodeInput" name="postalCodeInput" type="number" maxlength="10" minlength="10">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="apostalCodeLabel" for="postalCodeInput"> کد پستی</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    <input class="customerAddingForm" id="addressInput" name="addressInput" type="text">
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="addressLabel" for="addressInput"> آدرس</label> 
+                </div>
+                <div class="customerAddGrItem">
+                    
+                </div>
+                <div class="customerAddGrItem">
+                    <label class="customerAddingForm" id="locationLabel"> لوکیشن</label> 
+                </div>
+                
             </div>
         </form>
     </div>
+    <script>
+        window.onload = function(event) {
+            document.getElementById("telInput2").style.visibility="hidden";
+            document.getElementById("telInput3").style.visibility="hidden";
+            document.getElementById("mobileInput2").style.visibility="hidden";
+            document.getElementById("mobileInput3").style.visibility="hidden";
+            document.getElementById("addTel3").style.visibility="hidden";
+            document.getElementById("addMobile3").style.visibility="hidden";
+        }
+        window.onclick = function(event){
+            if (event.target==document.getElementById("addTel2")) {
+                document.getElementById("telInput2").style.visibility="visible";
+                document.getElementById("addTel3").style.visibility="visible";
+            }
+            if (event.target==document.getElementById("addTel3")) {
+                document.getElementById("telInput3").style.visibility="visible";
+            }
+            if (event.target==document.getElementById("addMobile2")) {
+                document.getElementById("mobileInput2").style.visibility="visible";
+                document.getElementById("addMobile3").style.visibility="visible";
+            }
+            if (event.target==document.getElementById("addMobile3")) {
+                document.getElementById("mobileInput3").style.visibility="visible";
+            }
+        }
+    </script>
 </body>

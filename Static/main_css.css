@@ -1,3 +1,9 @@
+
+:root{
+    --var-gray: #555b63;
+    --var-green: #6b8d8b;
+}
+
 /* Login_CSS */
 #loginBody {
     background-color: #555b63;
@@ -180,5 +186,16 @@ input.frmLogin {
     height: 90vh;
     border: none;
 }
-/* #userInfo:hover #userInfoBox {display: block;} */
-
+/* CustomerAdding _CSS */
+#customerBody {
+    background-color: var(--var-gray);
+}
+#customerAddingTabel {
+    float: right;
+    padding: 20px;
+}
+#customerAddingTabel td{
+    width: 10vw;
+    padding: 20px 0px;
+    text-align: right;
+}

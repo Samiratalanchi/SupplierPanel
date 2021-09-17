@@ -3,7 +3,7 @@
     --var-gray: #555b63;
     --var-green: #6b8d8b;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
 /* Login_CSS */
 #loginBody {
     background-color: #555b63;
@@ -73,6 +73,7 @@ input.frmLogin {
     background-color: #555b63;
     margin: 0%;
     padding: 0%;
+    font-family: 'Lateef', cursive;
 }
 #panel {
     margin-right: 0%;
@@ -189,6 +190,7 @@ input.frmLogin {
 /* CustomerAdding _CSS */
 #customerBody {
     background-color: var(--var-gray);
+    font-family: 'Lateef', cursive;
 }
 #customerAddingTabel {
     float: right;

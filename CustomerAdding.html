@@ -7,7 +7,7 @@
 </head>
 <body id="customerBody">
     <div id="customerAddingBox">
-        <form id="customerAdding">
+        <form id="customerAdding" onsubmit="myValue(event)">
             <div id="customerAddingGrid">
                 <div class="customerAddGrItem mergeNameInput">
                     <input class="customerAddingForm" id="nameInput" name="nameInput" type="text" required>
@@ -107,22 +107,24 @@
             document.getElementById("mobileInput3").style.visibility="hidden";
         }
         window.onclick = function(event){
+            var t1=document.getElementById("telInput1").value;
+            var t2=document.getElementById("telInput2").value;
+            var m1=document.getElementById("mobileInput1").value;
+            var m2=document.getElementById("mobileInput2").value;
             if (event.target==document.getElementById("addTel")) {
-                if(telCounter==0){
+                if(telCounter==0 && t1!=""){
                     document.getElementById("telInput2").style.visibility="visible";
                     telCounter++;
-
-                }else if(telCounter==1 && document.getElementById("telInput2").text != "" ) {
-                    console.log(document.getElementById("telInput2").value);
+                }else if(telCounter==1 && t2!="") {
                     document.getElementById("telInput3").style.visibility="visible";
                 }
                 
             }
             if (event.target==document.getElementById("addMobile")) {
-                if(mobileCounter==0){
+                if(mobileCounter==0 && m1!=""){
                     document.getElementById("mobileInput2").style.visibility="visible";
                     mobileCounter++;
-                } else if(telCounter==1 && document.getElementById("mobileInput2")!="" ) {
+                } else if(telCounter==1 && m2!="") {
                     document.getElementById("mobileInput3").style.visibility="visible";
                 }
             }

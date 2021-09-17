@@ -2,6 +2,8 @@
 :root{
     --var-gray: #555b63;
     --var-green: #6b8d8b;
+    --var-lowgreen: #afe6e2;
+    --var-white: #ffffff;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
 /* Login_CSS */
@@ -176,23 +178,39 @@ input.frmLogin {
     justify-content: center;
 }
 #content {
+    /* background-color: var(--var-white); */
     position:absolute;
     width: 80vw;
-    height: auto;
+    height: 90vh;
     margin-left: 2.5vw;
     margin-top: 5vw;
+    /* box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.459) */
 }
 /* CustomerAdding _CSS */
 #customerBody {
     background-color: var(--var-gray);
     font-family: 'Lateef', cursive;
 }
-#customerAddingTabel {
-    float: right;
-    padding: 20px;
+#customerAddingGrid {
+    display: grid;
+    grid-template-columns: 200px 120px;
+    grid-template-rows: repeat(7,40px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+    justify-items: right;
+    align-items: center;
+    color: var(--var-white);
 }
-#customerAddingTabel td{
-    width: 10vw;
-    padding: 20px 0px;
-    text-align: right;
+#customerAddGrItem {
+    
+    padding: 10px;
+}
+.customerAddingForm {
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+}
+.customerAddingForm:focus {
+    background-color: var(--var-lowgreen);
 }

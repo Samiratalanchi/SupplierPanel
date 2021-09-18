@@ -268,7 +268,7 @@ input.frmLogin {
     grid-row: 9/15;
 }
 #locationInput {
-    width: 400px;
+    width: 640px;
     height: 400px;
     background-color: var(--var-white);
 }

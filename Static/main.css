@@ -283,3 +283,30 @@ input.frmLogin {
 #cityInput,#provinceInput,#countryInput{
     text-align: right;
 }
+/* customerlist_css */
+#customerListBody {
+    background-color: var(--var-back);
+    font-family: 'Lateef', cursive;
+}
+#customerlistTable {
+    float: right;
+    border-collapse: collapse;
+    width: 70vw;
+    text-align: center;
+}
+#customerlistTable,th,td {
+    border: 1px solid var(--var-gray);
+}
+#customerlistTable th{
+    background-color: var(--var-gray);
+    color: var(--var-white);
+}
+#customerlistTable tr {
+    height: 30px;
+}
+#customerlistTable tr:hover {
+    background-color: var(--var-lowgreen);
+}
+#customerlistTable tr:nth-child(odd) {
+    background-color: var(--var-lowgray);
+}

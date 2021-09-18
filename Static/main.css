@@ -304,9 +304,10 @@ input.frmLogin {
 #customerlistTable tr {
     height: 30px;
 }
-#customerlistTable tr:hover {
-    background-color: var(--var-lowgreen);
-}
+
 #customerlistTable tr:nth-child(odd) {
     background-color: var(--var-lowgray);
+}
+#customerlistTable tr:hover {
+    background-color: var(--var-lowgreen);
 }

@@ -183,7 +183,9 @@ input.frmLogin {
     position:absolute;
     width: 80vw;
     height: 90vh;
+    overflow-y: scroll;
     margin-left: 2.5vw;
+    margin-top: 8vh;
 }
 /* CustomerAdding _CSS */
 #customerBody {

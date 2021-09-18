@@ -3,7 +3,7 @@
     --var-gray: #555b6e;
     --var-lowgray: #999ea5;
     --var-green: #89b0ae;
-    --var-lowgreen: #beesdb;
+    --var-lowgreen: #bee3db;
     --var-white: #ffffff;
     --var-back: #faf9f9;
 }
@@ -156,7 +156,7 @@ input.frmLogin {
     margin-left: 4vw;
     width: 10vw;
     height: 10vw;
-    background-color: rgba(155, 228, 185, 0.651);
+    background-color: var(--var-lowgreen);
     border: 1px solid white;
     position: absolute;
     display: none;
@@ -197,7 +197,7 @@ input.frmLogin {
     float: right;
     display: grid;
     grid-template-columns: 300px 120px 300px 120px;
-    grid-template-rows: repeat(15,60px);
+    grid-template-rows: repeat(16,60px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 10px;
@@ -218,20 +218,21 @@ input.frmLogin {
 }
 #addressInput {
     background-color: var(--var-lowgray);
-    width: 700px;
+    width: 640px;
     height: 60px;
     font-size: 16px;
+    text-align: right;
 }
 #addressInput:focus {
     background-color: var(--var-white);
 }
 #addTel {
     font-size: 20px;
-    color: var(--var-green);
+    color: rgb(39, 173, 133);
 }
 #addMobile {
     font-size: 20px;
-    color: var(--var-green);
+    color: rgb(39, 173, 133);
 }
 .mergeNameInput{
     grid-column: 1/4;
@@ -260,14 +261,25 @@ input.frmLogin {
 }
 .mergeLocationInput {
     grid-column: 1/4;
-    grid-row: 9/16;
+    grid-row: 9/15;
 }
 .mmergeLocationLabel {
     grid-column: 4/5;
-    grid-row: 9/16;
+    grid-row: 9/15;
 }
 #locationInput {
     width: 400px;
     height: 400px;
     background-color: var(--var-white);
+}
+.mergeButton {
+    grid-column: 1/5;
+}
+#submitButton {
+    background-color: var(--var-green);
+    color: var(--var-white);
+}
+#nameInput,#storeTypeInput,#storeNameInput,
+#cityInput,#provinceInput,#countryInput{
+    text-align: right;
 }

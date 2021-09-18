@@ -288,7 +288,41 @@ input.frmLogin {
     background-color: var(--var-back);
     font-family: 'Lateef', cursive;
 }
+#searchBox {
+    float: right;
+    width: 65vw;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 100px 250px 50px 250px 120px;
+    justify-items: right;
+    align-items: center;
+    grid-column-gap: 10px;
+    justify-self: center;
+    color: var(--var-gray);
+}
+#provinceSearchInput,#nameSearchInput{
+    width: 200px;
+    height: 30px;
+    background-color: var(--var-lowgray);
+    font-size: 16px;
+    text-align: right;
+    border-radius: 10px;
+}
+#provinceSearchInput:focus,#nameSearchInput:focus {
+    background-color: var(--var-white)
+}
+#provinceSearchLabel,#nameSearchLabel{
+    width: 120px;
+    height: 30px;
+}
+#searchButton {
+    background-color: var(--var-green);
+    color: var(--var-white);
+    border-radius: 10px;
+    height: 30px;
+}
 #customerlistTable {
+    margin-top: 3vh;
     float: right;
     border-collapse: collapse;
     width: 70vw;

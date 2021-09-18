@@ -283,6 +283,9 @@ input.frmLogin {
 #cityInput,#provinceInput,#countryInput{
     text-align: right;
 }
+#latlong {
+    display: none;
+}
 /* customerlist_css */
 #customerListBody {
     background-color: var(--var-back);

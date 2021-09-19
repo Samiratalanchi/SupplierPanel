@@ -496,3 +496,11 @@ input.frmLogin {
 .factorAddingForm::placeholder{
     color: var(--var-white);
 }
+
+/* customerprofile_css */
+
+#customerProfileBody {
+    background-color: var(--var-back);
+    font-family: 'Lateef', cursive;
+    color: var(--var-gray);
+}

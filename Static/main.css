@@ -215,9 +215,11 @@ input.frmLogin {
 .customerAddGrItem input {
     background-color: var(--var-lowgray);
     font-size: 16px;
+    color: var(--var-white);
 }
 .customerAddingForm:focus {
-    background-color: var(--var-white)
+    background-color: var(--var-white);
+    color: var(--var-white);
 }
 #addressInput {
     background-color: var(--var-lowgray);
@@ -379,9 +381,11 @@ input.frmLogin {
 .factorAddingGridItem input {
     background-color: var(--var-lowgray);
     font-size: 16px;
+    color: var(--var-white);
 }
 .factorAddingGridItem input:focus {
     background-color: var(--var-white);
+    color: black;
 }
 
 .factorAddingGridItem:nth-child(1) {

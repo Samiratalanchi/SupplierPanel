@@ -503,4 +503,44 @@ input.frmLogin {
     background-color: var(--var-back);
     font-family: 'Lateef', cursive;
     color: var(--var-gray);
+    font-size: 16px;
+}
+#customerDetailGrid {
+    float: right;
+    display: grid;
+    grid-template-columns: 120 120px 120 120px;
+    grid-template-rows: repeat(18,30px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 0px 10px;
+    justify-items: right;
+    align-items: center;
+}
+.customerDetailGridItem:nth-child(1) {
+    grid-column: 1/4;
+}
+.customerDetailGridItem:nth-child(2) {
+    grid-column: 4/5;
+}
+.customerDetailGridItem:nth-child(31) {
+    grid-column: 1/4;
+}
+.customerDetailGridItem:nth-child(32) {
+    grid-column: 4/5;
+}
+.customerDetailGridItem:nth-child(33) {
+    grid-column: 1/4;
+    grid-row: 10/19;
+}
+.customerDetailGridItem:nth-child(34) {
+    grid-column: 4/5;
+}
+#locationPRValue {
+    background-color: var(--var-white);
+    width: 30vw;
+    height: 30vw;
+}
+.customerDetailGridItem:nth-child(even) {
+    color: var(--var-gray);
+    font-size: 18px;
 }

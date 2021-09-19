@@ -477,7 +477,7 @@ input.frmLogin {
     height: 30px;
 }
 .factorAddingGridItem input:disabled {
-    background-color: var(--var-gray);
+    background-color: var(--var-back);
 }
 .factorAddingGridItem textarea {
     background-color: var(--var-lowgray);
@@ -491,7 +491,4 @@ input.frmLogin {
 }
 .factorAddingForm::placeholder{
     color: var(--var-white);
-}
-.factorAddingGridItem textarea:disabled {
-    background-color: var(--var-gray);
 }

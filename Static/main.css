@@ -7,6 +7,9 @@
     --var-white: #ffffff;
     --var-back: #faf9f9;
 }
+button {
+    cursor: pointer;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
 /* Login_CSS */
 #loginBody {
@@ -361,10 +364,8 @@ input.frmLogin {
 #factorAddingGrid {
     float: right;
     display: grid;
-    grid-template-columns: 300px 200px 350px 120px;
+    grid-template-columns: 300px 200px 300px 120px;
     grid-template-rows: repeat(10,60px);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
     padding: 10px;
     justify-items: right;
     justify-content: right;
@@ -440,4 +441,26 @@ input.frmLogin {
 .factorAddingGridItem:nth-child(23) {
     grid-column: 1/4;
     grid-row: 8/9;
+}
+.factorAddingGridItem:nth-child(25) {
+    grid-column: 1/4;
+    grid-row: 9/10;
+}
+.factorAddingGridItem:nth-child(26) {
+    grid-column: 4/5;
+    grid-row: 9/10;
+}
+.factorAddingGridItem:nth-child(27) {
+    grid-column: 1/5;
+    grid-row: 10/11
+}
+#cargoNameInput {
+    text-align: right;
+}
+#factorSubmitButton {
+    background-color: var(--var-green);
+    color: var(--var-white);
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
 }

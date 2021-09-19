@@ -537,10 +537,11 @@ input.frmLogin {
 }
 #locationPRValue {
     background-color: var(--var-white);
-    width: 30vw;
-    height: 30vw;
+    width: 300px;
+    height: 300px;
 }
 .customerDetailGridItem:nth-child(even) {
     color: var(--var-gray);
     font-size: 18px;
 }
+

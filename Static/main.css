@@ -464,6 +464,6 @@ input.frmLogin {
     width: 100px;
     height: 30px;
 }
-#deliveryCostInput {
-    d
+.factorAddingGridItem input:disabled {
+    background-color: var(--var-gray);
 }

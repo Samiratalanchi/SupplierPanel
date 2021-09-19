@@ -375,13 +375,14 @@ input.frmLogin {
     width: 200px;
     border-radius: 10px;
 }
-.factorAddingForm input {
+.factorAddingGridItem input {
     background-color: var(--var-lowgray);
     font-size: 16px;
 }
-.factorAddingForm :focus {
+.factorAddingGridItem input:focus {
     background-color: var(--var-white);
 }
+
 .factorAddingGridItem:nth-child(1) {
     grid-column: 1/4;
 }

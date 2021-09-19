@@ -27,8 +27,7 @@
         </div>
         <div class="factorAddingGridItem">
             <label>تحویل توسط مشتری</label>
-            <input id="boughtCostCheckCustomer" name="cargoRadioButton" type="radio" checked>
-            
+            <input id="customerDeliveryRadio" name="deliveryRadio" type="radio" checked>
         </div>
         <div class="factorAddingGridItem">
             <input class="factorAddingForm" id="deliveryCostInput" type="number">
@@ -38,7 +37,7 @@
         </div>
         <div class="factorAddingGridItem">
             <label>تحویل توسط فروشنده</label>
-            <input id="boughtCostCheckCustomer" name="cargoRadioButton" type="radio">
+            <input id="sellerDeliveryRadio" name="deliveryRadio" type="radio">
         </div>
         <div class="factorAddingGridItem">
             <input class="factorAddingForm" id="cargoCostInput" type="number">
@@ -48,7 +47,7 @@
         </div>
         <div class="factorAddingGridItem">
             <label>باربری</label>
-            <input id="boughtCostCheckCustomer" name="cargoRadioButton" type="radio">
+            <input id="cargoDeliveryRadio" name="deliveryRadio" type="radio">
         </div>
         <div class="factorAddingGridItem">
             <label class="factorAddingForm" id="deliveryTypeLabel"> نحوه ارسال</label>
@@ -93,4 +92,50 @@
             <button class="factorAddingForm" id="factorSubmitButton" type="submit">ثبت فاکتور</button>
         </div>
     </div>
+    <script>
+        var dCI=document.getElementById("deliveryCostInput");
+        var cCI=document.getElementById("cargoCostInput");
+        var cNI=document.getElementById("cargoNameInput");
+        var cII=document.getElementById("cargoIdInput");
+        var cLI=document.getElementById("cargoListIdInput");
+
+        if(document.getElementById("customerDeliveryRadio").checked){
+                dCI.disabled = true;
+                cCI.disabled = true;
+                cNI.disabled = true;
+                cII.disabled = true;
+                cLI.disabled = true;
+        }
+        window.onclick=function(event) {
+            if(document.getElementById("customerDeliveryRadio").checked){
+                dCI.disabled = true;
+                dCI.value="";
+                cCI.disabled = true;
+                cCI.value="";
+                cNI.disabled = true;
+                cNI.value="";
+                cII.disabled = true;
+                cII.value="";
+                cLI.disabled = true;
+                cLI.value="";
+            }else if(document.getElementById("sellerDeliveryRadio").checked){
+                dCI.disabled = false;
+                cCI.disabled = true;
+                cCI.value="";
+                cNI.disabled = true;
+                cNI.value="";
+                cII.disabled = true;
+                cII.value="";
+                cLI.disabled = true;
+                cLI.value="";
+            }else if(document.getElementById("cargoDeliveryRadio").checked){
+                dCI.disabled = true;
+                dCI.value="";
+                cCI.disabled = false;
+                cNI.disabled = false;
+                cII.disabled = false;
+                cLI.disabled = false;
+            }
+        }
+    </script>
 </body>

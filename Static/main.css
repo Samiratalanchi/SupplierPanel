@@ -7,7 +7,7 @@
     --var-white: #ffffff;
     --var-back: #faf9f9;
 }
-button {
+button, a {
     cursor: pointer;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
@@ -541,7 +541,43 @@ input.frmLogin {
     height: 300px;
 }
 .customerDetailGridItem:nth-child(even) {
-    color: var(--var-gray);
     font-size: 18px;
 }
+#mobilePRValue2,#telPRValue2 {
+    font-size: 16px;
+}
+#factorListTable {
+    margin-top: 3vh;
+    float: right;
+    border-collapse: collapse;
+    width: 70vw;
+    text-align: center;
+}
+#factorListTable,th,td {
+    border: 1px solid var(--var-gray);
+}
+#factorListTable th{
+    background-color: var(--var-gray);
+    color: var(--var-white);
+}
+#factorListTable tr {
+    height: 30px;
+}
 
+#factorListTable tr:nth-child(odd) {
+    background-color: var(--var-lowgray);
+}
+#factorListTable tr:hover {
+    background-color: var(--var-lowgreen);
+}
+#factorViewButton,#factorDeleteButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--var-white);
+}
+.viewDeleteImg {
+    width: 20px;
+    height: 20px;
+    margin-left: -3px;
+}

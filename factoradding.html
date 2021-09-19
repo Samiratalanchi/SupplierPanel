@@ -65,6 +65,12 @@
             <label class="factorAddingForm" id="totalCostLabel">مبلغ کل / ریال</label>
         </div>
         <div class="factorAddingGridItem">
+            <textarea class="factorAddingForm" id="‌deliveryAddressInput" placeholder="در صورت عدم ثبت آدرس مشتری ثبت خواهد شد"></textarea>
+        </div>
+        <div class="factorAddingGridItem">
+            <label class="factorAddingForm" id="deliveryAddressLabel" >آدرس تحویل </label>
+        </div>
+        <div class="factorAddingGridItem">
             <input class="factorAddingForm" id="cargoIdInput" type="number">
         </div>
         <div class="factorAddingGridItem">
@@ -118,6 +124,7 @@
                 cII.value="";
                 cLI.disabled = true;
                 cLI.value="";
+                aDI.disabled = true;
             }else if(document.getElementById("sellerDeliveryRadio").checked){
                 dCI.disabled = false;
                 cCI.disabled = true;

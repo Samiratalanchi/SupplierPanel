@@ -355,7 +355,18 @@ input.frmLogin {
 #customerlistTable tr:hover {
     background-color: var(--var-lowgreen);
 }
+.viewEditImg {
+    width: 20px;
+    height: 20px;
+    margin-left: -3px;
+}
 
+#customerEditButton,#customerDeleteButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--var-white);
+}
 /* faktoradding_css */
 
 #factorAddingBody {

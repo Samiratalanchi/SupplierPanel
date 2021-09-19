@@ -516,23 +516,17 @@ input.frmLogin {
     justify-items: right;
     align-items: center;
 }
-.customerDetailGridItem:nth-child(1) {
-    grid-column: 1/4;
-}
-.customerDetailGridItem:nth-child(2) {
-    grid-column: 4/5;
-}
-.customerDetailGridItem:nth-child(31) {
-    grid-column: 1/4;
-}
-.customerDetailGridItem:nth-child(32) {
-    grid-column: 4/5;
-}
 .customerDetailGridItem:nth-child(33) {
+    grid-column: 1/4;
+}
+.customerDetailGridItem:nth-child(34) {
+    grid-column: 4/5;
+}
+.customerDetailGridItem:nth-child(35) {
     grid-column: 1/4;
     grid-row: 10/19;
 }
-.customerDetailGridItem:nth-child(34) {
+.customerDetailGridItem:nth-child(36) {
     grid-column: 4/5;
 }
 #locationPRValue {
@@ -550,7 +544,7 @@ input.frmLogin {
     margin-top: 3vh;
     float: right;
     border-collapse: collapse;
-    width: 70vw;
+    width: 50vw;
     text-align: center;
 }
 #factorListTable,th,td {

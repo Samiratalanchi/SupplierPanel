@@ -597,3 +597,12 @@ input.frmLogin {
     height: 20px;
     margin-left: -3px;
 }
+
+/* customerprofile_css */
+
+#factorDetailBody {
+    background-color: var(--var-back);
+    font-family: 'Lateef', cursive;
+    color: var(--var-gray);
+    font-size: 16px;
+}

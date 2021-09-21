@@ -26,11 +26,10 @@ button, a {
     margin-top: 60px;
 }
 #plantBack {
-    width: 70px;
+    width: 220px;
     height: auto;
     position: absolute;
-    margin-left: -220px;
-    margin-top: 200px;
+    margin-left: -170px;
 }
 #loginBox {
     position: relative;

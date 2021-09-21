@@ -11,7 +11,7 @@ button, a {
     cursor: pointer;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
-/* Login_CSS */
+/* Login_CSS - laptop*/
 #loginBody {
     background-color: var(--var-gray);
     display: flex;
@@ -75,6 +75,19 @@ input.frmLogin {
     margin-top: 60px;
     background-color: var(--var-green);
     color: var(--var-white);
+}
+/* Login_CSS - mobile*/
+@media screen and (max-width:500px) {
+    #characterBack {
+        width: 170px;
+        margin-left: 270px;
+        margin-top: 60px;
+    }
+    #plantBack {
+        width: 220px;
+        margin-left: -130px;
+        margin-top: -25px;
+    }
 }
 /* Dashboard_CSS */
 #dashboardBody {

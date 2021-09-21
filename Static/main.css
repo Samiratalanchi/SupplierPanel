@@ -160,7 +160,7 @@ input.frmLogin {
     margin-left: 4vw;
     width: 10vw;
     height: 10vw;
-    background-color: var(--var-lowgreen);
+    background-color: #bee3db8f;
     border: 1px solid white;
     position: absolute;
     display: none;
@@ -582,7 +582,7 @@ input.frmLogin {
     margin-top: 1vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
+    grid-template-columns: 490px;
     grid-template-rows: repeat(1,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;

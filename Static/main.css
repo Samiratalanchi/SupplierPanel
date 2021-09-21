@@ -64,8 +64,7 @@ input.frmLogin {
 #loginForm {
     margin-top: 70px;
 }
-#submitButton {
-    background-color: var(--var-white);
+#loginButton {
     width: 100px;
     height: 30px;
     border-radius: 20px;
@@ -73,6 +72,8 @@ input.frmLogin {
     float: right;
     margin-right: 50px;
     margin-top: 60px;
+    background-color: var(--var-green);
+    color: var(--var-white);
 }
 /* Dashboard_CSS */
 #dashboardBody {

@@ -519,8 +519,8 @@ input.frmLogin {
 #customerDetailGrid {
     float: right;
     display: grid;
-    grid-template-columns: 120 120px 120 120px;
-    grid-template-rows: repeat(18,30px);
+    grid-template-columns: 120 120px 120 130px;
+    grid-template-rows: repeat(19,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 0px 10px;
@@ -550,6 +550,17 @@ input.frmLogin {
 }
 #mobilePRValue2,#telPRValue2 {
     font-size: 16px;
+}
+.customerDetailGridItem:nth-child(37) {
+    grid-column: 1/5;
+}
+#factorAddButton {
+    background-color: var(--var-green);
+    color: var(--var-white);
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
 }
 #factorListTable {
     margin-top: 3vh;

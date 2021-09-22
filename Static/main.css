@@ -622,19 +622,19 @@ input.frmLogin {
         grid-row: 4/14;
     }
     #customerDetailGrid1 {
-        grid-template-columns: 120px 120px 120px 130px;
+        grid-template-columns: 100px 180px 120px 180px;
         grid-template-rows: repeat(2,30px);
     }
     #customerDetailGrid2 {
-        grid-template-columns: 120px 120px 120px 130px;
+        grid-template-columns: 100px 180px 120px 180px;
         grid-template-rows: repeat(2,30px);
     }
     #customerDetailGrid3 {
-        grid-template-columns: 120px 120px 120px 130px;
+        grid-template-columns: 100px 180px 120px 180px;
         grid-template-rows: repeat(2,30px);
     }
     #customerDetailGrid4 {
-        grid-template-columns: 120px 120px 120px 130px;
+        grid-template-columns: 100px 180px 120px 180px;
         grid-template-rows: repeat(13,30px);
     }
     #customerDetailGrid5 {

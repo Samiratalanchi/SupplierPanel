@@ -543,13 +543,12 @@ input.frmLogin {
     margin-top: 1vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
-    grid-template-rows: repeat(2,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 0px 10px;
     justify-items: right;
     align-items: center;
+    direction: rtl;
 }
 #customerDetailGrid2 {
     border: 1px solid var(--var-gray);
@@ -558,13 +557,12 @@ input.frmLogin {
     margin-top: 1vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
-    grid-template-rows: repeat(2,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 0px 10px;
     justify-items: right;
     align-items: center;
+    direction: rtl;
 }
 #customerDetailGrid3 {
     border: 1px solid var(--var-gray);
@@ -573,13 +571,12 @@ input.frmLogin {
     margin-top: 1vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
-    grid-template-rows: repeat(2,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 0px 10px;
     justify-items: right;
     align-items: center;
+    direction: rtl;
 }
 #customerDetailGrid4 {
     border: 1px solid var(--var-gray);
@@ -588,26 +585,61 @@ input.frmLogin {
     margin-top: 1vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
-    grid-template-rows: repeat(12,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 0px 10px;
     justify-items: right;
     align-items: center;
+    direction: rtl;
 }
 #customerDetailGrid5 {
     margin-left: 40vw;
     margin-top: 1vw;
     float: right;
     display: grid;
-    grid-template-columns: 490px;
-    grid-template-rows: repeat(1,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 0px 10px;
     justify-items: right;
     align-items: center;
+}
+@media screen and (min-width:500px) {
+    .mergeaddressPRLabel {
+        grid-column: 1/2;
+        grid-row:3/4;
+    }
+    .mergeaddressPRValue {
+        grid-column: 2/5;
+        grid-row:3/4;
+    }
+    .mergelocationPRLabel {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .mergelocationPRValue {
+        grid-column: 2/5;
+        grid-row: 4/14;
+    }
+    #customerDetailGrid1 {
+        grid-template-columns: 120px 120px 120px 130px;
+        grid-template-rows: repeat(2,30px);
+    }
+    #customerDetailGrid2 {
+        grid-template-columns: 120px 120px 120px 130px;
+        grid-template-rows: repeat(2,30px);
+    }
+    #customerDetailGrid3 {
+        grid-template-columns: 120px 120px 120px 130px;
+        grid-template-rows: repeat(2,30px);
+    }
+    #customerDetailGrid4 {
+        grid-template-columns: 120px 120px 120px 130px;
+        grid-template-rows: repeat(13,30px);
+    }
+    #customerDetailGrid5 {
+        grid-template-columns: 490px;
+        grid-template-rows: repeat(1,30px);
+    }
 }
 #locationPRValue {
     background-color: var(--var-white);
@@ -617,11 +649,9 @@ input.frmLogin {
 .customerDetailGridItem:nth-child(even) {
     font-size: 18px;
 }
+
 #mobilePRValue2,#telPRValue2 {
     font-size: 16px;
-}
-.customerDetailGridItem:nth-child(37) {
-    grid-column: 1/5;
 }
 #factorAddButton {
     background-color: var(--var-green);
@@ -667,7 +697,7 @@ input.frmLogin {
     margin-left: -3px;
 }
 
-/* customerprofile_css */
+/* factordetail_css */
 
 #factorDetailBody {
     background-color: var(--var-back);
@@ -919,5 +949,53 @@ input.frmLogin {
     }
     #factorSubmitButton {
         margin-right: 220px;
+    }
+
+    /* customerprofile- mobile*/
+    #customerDetailGrid1 {
+        margin-left: 40vw;
+        margin-top: 1vw;
+        grid-template-columns: 80px 200px;
+        grid-template-rows: repeat(4,30px);
+    }
+    #customerDetailGrid2 {
+        margin-left: 40vw;
+        margin-top: 1vw;
+        grid-template-columns: 80px 200px;
+        grid-template-rows: repeat(4,30px);
+    }
+    #customerDetailGrid3 {
+        margin-left: 40vw;
+        margin-top: 1vw;
+        grid-template-columns: 80px 200px;
+        grid-template-rows: repeat(4,30px);
+    }
+    #customerDetailGrid4 {
+        margin-left: 40vw;
+        margin-top: 1vw;
+        grid-template-columns: 80px 200px;
+        grid-template-rows: repeat(16,30px);
+    }
+    #customerDetailGrid5 {
+        margin-left: 40vw;
+        margin-top: 1vw;
+        grid-template-columns: 280px;
+        grid-template-rows: repeat(1,30px);
+    }
+    #locationPRValue {
+        width: 280px;
+        height: 280px;
+    }
+    .mergelocationPRLabel {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    .mergelocationPRValue {
+        grid-column: 1/3;
+        grid-row: 7/17;
+    }
+    #factorListTable {
+        width: 90vw;
+        font-size: 12px;
     }
 }

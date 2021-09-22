@@ -709,7 +709,7 @@ input.frmLogin {
     margin-left: 40vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
+    grid-template-columns: 120px 120px 120px 120px;
     grid-template-rows: repeat(1,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -718,13 +718,14 @@ input.frmLogin {
     align-items: center;
     border: 1px solid var(--var-gray);
     border-radius: 10px;
+    direction: rtl;
 }
 .factorDetailGrid2 {
     margin-left: 40vw;
     margin-top: 1vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
+    grid-template-columns: 120px 120px 120px 120px;
     grid-template-rows: repeat(2,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -733,13 +734,14 @@ input.frmLogin {
     align-items: center;
     border: 1px solid var(--var-gray);
     border-radius: 10px;
+    direction: rtl;
 }
 .factorDetailGrid3 {
     margin-top: 1vw;
     margin-left: 40vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
+    grid-template-columns: 120px 120px 120px 120px;
     grid-template-rows: repeat(3,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -748,12 +750,13 @@ input.frmLogin {
     align-items: center;
     border: 1px solid var(--var-gray);
     border-radius: 10px;
+    direction: rtl;
 }
 .factorDetailGrid4 {
     margin-top: 1vw;
     float: right;
     display: grid;
-    grid-template-columns: 120px 120px 120px 130px;
+    grid-template-columns: 120px 120px 120px 120px;
     grid-template-rows: repeat(1,30px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -997,5 +1000,23 @@ input.frmLogin {
     #factorListTable {
         width: 90vw;
         font-size: 12px;
+    }
+
+    /* factordetail- mobile*/
+    .factorDetailGrid1 {
+        grid-template-columns: 120px 180px;
+        grid-template-rows: repeat(2,30px);
+    }
+    .factorDetailGrid2 {
+        grid-template-columns: 120px 180px;
+        grid-template-rows: repeat(4,30px);
+    }
+    .factorDetailGrid3 {
+        grid-template-columns: 120px 180px;
+        grid-template-rows: repeat(3,30px);
+    }
+    .factorDetailGrid4 {
+        grid-template-columns: 120px 180px;
+        grid-template-rows: repeat(1,30px);
     }
 }

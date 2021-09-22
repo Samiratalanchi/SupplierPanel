@@ -10,8 +10,8 @@
 
     <div id="topBox">
 
-        <div id="userInfo" onclick="menuDisplay()">
-            <i class="far fa-user-circle"></i>
+        <div id="userInfo">
+            <i class="far fa-user-circle" onclick="ownerDisplay()"></i>
             <div id="userInfoBox">
                 <p id="userName">سمیرا طالانچی</p>
                 <a><button id="userExit">خروج</button></a>
@@ -22,12 +22,12 @@
 
     <section id="panel">
         <div id="logoBox">
-            <img id="logo" src="./Static/Images/Logo.png">
+            <img id="logo" src="./Static/Images/Logo.png" onclick="menuDisplay()">
         </div>
         <div id="menuBox">
             <ul id="menu">
                 <li class="menuItems" id="customerAddingBox">
-                    <a class="menuLink" href="./Login.html" target="iFrameDashboard">
+                    <a class="menuLink" href="#">
                         <span class="buttonNames">ثبت نام مشتری</span>
                         <i class="far fa-user"></i>
                     </a>
@@ -43,15 +43,22 @@
     </section>
     <div id="content"></div>
     <script>
-        function menuDisplay() {
+        function ownerDisplay() {
             document.getElementById("userInfoBox").style.display= "block";
         }
-
+        function menuDisplay() {
+            document.getElementById("menuBox").style.display= "block";
+        }
+        console.log(window.innerWidth);
         window.onclick= function(event){
             var circle = document.getElementsByClassName("far fa-user-circle")[0];
+            var firo = document.getElementById("logo");
 
             if (event.target!=circle){
                 document.getElementById("userInfoBox").style.display= "none";
+            }
+            if (event.target!=firo && window.innerWidth <= 501 ) {
+                document.getElementById("menuBox").style.display= "none";
             }
         }
     </script>

@@ -130,6 +130,7 @@ input.frmLogin {
 .menuItems {
     margin-right:20px;
     padding: 20px 0px;
+    font-size: 1.5vw;
 }
 .menuLink:hover {
     color: #555b63;

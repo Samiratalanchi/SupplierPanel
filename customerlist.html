@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body id="customerListBody">
-    <div id="searchBox">
-        <form id="searchForm">
+    <form id="searchForm"></form>
+        <div id="searchBox">
             <div>
-                <label id="nameSearchLabel" for="nameSearchInput">نام و نام خانوادگی</label>
+                <label id="nameSearchLabel" for="nameSearchInput">نام مشتری  </label>
             </div>
             <div>
                 <input id="nameSearchInput" type="text" name="nameSearchInput">
@@ -21,11 +21,24 @@
             <div>
                 <input id="provinceSearchInput" type="text" name="provinceSearchInput">
             </div>
+            <div>
+                <label id="provincesearchLabel" for="provinceSearchInput">مرتب سازی</label>
+            </div>
+            <div id="sortSelect">
+                <select id="customerSort">
+                    <option>----</option>
+                    <option>ابثین</option>
+                    <option>ابثین</option>
+                    <option>ابثین</option>
+                    <option>ابثین</option>
+                </select>
+            </div>
             <div id="lastChild">
                 <button id="searchButton" type="button">جست و جو</button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
+    
     <table id="customerlistTable">
         <tr class="tableRow tableFirstRow">
             <th>کلیدها </th>
@@ -41,6 +54,9 @@
             <td>
                 <button id="customerDeleteButton">
                     <img class="viewEditImg" src="./Static/Images/delete.png">
+                </button>
+                <button id="factorAddCLButton">
+                    <img class="viewEditImg" src="./Static/Images/edit.png">
                 </button>
                 <button id="customerEditButton">
                     <img class="viewEditImg" src="./Static/Images/edit.png">
@@ -58,6 +74,9 @@
             <td>
                 <button id="customerDeleteButton">
                     <img class="viewEditImg" src="./Static/Images/delete.png">
+                </button>
+                <button id="factorAddCLButton">
+                    <img class="viewEditImg" src="./Static/Images/edit.png">
                 </button>
                 <button id="customerEditButton">
                     <img class="viewEditImg" src="./Static/Images/edit.png">

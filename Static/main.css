@@ -187,12 +187,15 @@ input.frmLogin {
 }
 #content {
     position:absolute;
-    width: 80vw;
-    height: 90vh;
+    width: 77.5vw;
+    height: 87.5vh;
     overflow-y: scroll;
     margin-left: 2.5vw;
     margin-top: 8vh;
+    padding-right: 2.5vw;
+    padding-top: 2.5vh;
 }
+
 /* CustomerAdding _CSS */
 #customerBody {
     background-color: var(--var-back);
@@ -312,10 +315,10 @@ input.frmLogin {
 }
 #searchBox {
     float: right;
-    width: 65vw;
     height: 60px;
     display: grid;
-    grid-template-columns: 120px 250px 50px 250px 100px;
+    grid-template-columns: 70px 200px 50px 200px 90px 200px 100px;
+    grid-template-rows: 60px;
     justify-items: right;
     align-items: center;
     grid-column-gap: 10px;
@@ -324,7 +327,7 @@ input.frmLogin {
     direction: rtl;
 }
 #provinceSearchInput,#nameSearchInput{
-    width: 200px;
+    width: 150px;
     height: 30px;
     background-color: var(--var-lowgray);
     font-size: 16px;
@@ -338,10 +341,18 @@ input.frmLogin {
     width: 120px;
     height: 30px;
 }
+#customerSort {
+    width:150px;
+    height: 30px;
+    font-size: 18px;
+    background-color: var(--var-lowgray);
+    
+}
 #searchButton {
     background-color: var(--var-green);
     color: var(--var-white);
     border-radius: 10px;
+    width: 100px;
     height: 30px;
 }
 #customerlistTable {
@@ -374,7 +385,7 @@ input.frmLogin {
     margin-left: -3px;
 }
 
-#customerEditButton,#customerDeleteButton {
+#customerEditButton,#customerDeleteButton,#factorAddCLButton {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -833,17 +844,17 @@ input.frmLogin {
 
     /* customerlist - mobile*/
     #searchBox {
-        width: 340px;
-        height: 110px;
+        height: 160px;
         grid-template-columns: 120px 200px;
-        grid-template-rows: repeat(3,40px);
+        grid-template-rows: repeat(4,40px);
+        direction: rtl;
     }
     #lastChild {
         grid-column: 1/3;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
     #searchButton {
-        margin-right: 260px;
+        margin-right: 180px;
     }
     #customerlistTable {
         width: 95vw;
